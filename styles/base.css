@@ -7,7 +7,7 @@
 body {
     display: grid;
     height: 100vw;
-    grid-template-rows: 1fr 2fr auto;
+    grid-template-rows: 150px 700px 100px;
 }
 
 header, footer {
@@ -23,8 +23,9 @@ header {
 
 
 header h1 {
-    align-self: center;
     padding: 2rem;
+    justify-content: center;
+    align-self: center;
 }
 
 nav {
@@ -53,6 +54,11 @@ nav li {
     padding: 10px;
 }
 
+nav li:hover {
+    background-color: rgb(148, 45, 148);
+    transition: 1s;
+}
+
 main {
     grid-column: 1/4;
     display: grid;
@@ -62,9 +68,18 @@ main {
 .card {
     margin: 20px;
     background-color: rgb(214, 214, 214);
-    grid-column: span 2;
-    column-gap: 5px;
     box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card:nth-child(1) {
+    grid-column: span 2;
+}
+
+.card:nth-child(1) img {
+    float: right;
+    margin: 20px;
 }
 
 .card h2 {
@@ -72,6 +87,11 @@ main {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+.card p {
+    margin: 2rem;
+    font-size: 24px;
 }
 
 footer {
