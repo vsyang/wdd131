@@ -57,15 +57,16 @@ nav li {
     padding: 10px;
 }
 
-nav li:hover {
+nav a:hover {
     background-color: rgb(148, 45, 148);
-    transition: 1s;
+    transition: 0.7s;
 }
 
 main {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    max-width: max-content;
 }
 
 .card {
@@ -80,8 +81,13 @@ main {
     grid-column: span 2;
 }
 
-.card:nth-child(1) img {
+.half1 img {
     float: right;
+    margin: 20px;
+}
+
+.half2 img {
+    float: left;
     margin: 20px;
 }
 
@@ -95,7 +101,7 @@ main {
 }
 
 .card p {
-    margin: 2rem;
+    margin: 20px;
     font-size: 24px;
 }
 
