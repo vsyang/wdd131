@@ -113,6 +113,11 @@ h3 {
     font-size: 24px;
 }
 
+.resources {
+    margin: 200px 80px 100px 100px;
+    font-size: 26px;
+}
+
 footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
