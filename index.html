@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>WDD 131 Dynamic Web Fundamentals - Vanessa Yang</title>
     <meta name="author" content="Vanessa Yang">
-    <meta name="description" content="The main or home page">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Vanessa Yang | Homepage">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <h1>Testing</h1>
+    <header>   
+        <h1>WDD 131: Dynamic Web Fundamentals - Vanessa Yang</h1>        
+        <nav>
+            <ul class="navigation-links">
+            <li><a href="https://www.linkedin.com/in/vanessa-sun-yang/" title="linkedin">LinkedIn</a></li>
+            <li><a href="https://byui.instructure.com/" title="ilearn">I-Learn</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/3?lang=eng&id=p16#p16" title="scripture">Scripture</a></li>
+            <li><a href="#" title="final">Final Project</a></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/me.png" alt="Vanessa Yang image">
+            <p>Hello! I am Vanessa. </p>
+        </section>
+    
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy<span id="currentYear"></span> 🌸 Vanessa Yang 🌸 Colorado</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>
