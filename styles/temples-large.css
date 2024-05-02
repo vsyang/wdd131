@@ -1,10 +1,11 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 866px) {
     body {
         overflow: visible;
     }
 
     header {
         display: flex;
+        flex: 0 1 50%;
     }
 
     #menuButton {
@@ -15,7 +16,13 @@
         display: flex;
         justify-content: space-evenly;
         padding: 20px;
-        order: 2;
+        order: 1;
+        width: auto;
+    }
+
+    nav {
+        flex-basis: 60%;
+        margin: 2vw;
     }
 
     nav a:hover {
