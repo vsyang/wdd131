@@ -6,12 +6,63 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    text-align: center;
 }
 
 h1 {
     font-family: "Poppins", sans-serif;
+    text-align: left;
+    padding: 4vw;
 }
 
 header, footer {
     background-color: rgb(252, 209, 216);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 auto;
+}
+
+#menuButton {
+    font-size: 40px;
+    border: none;
+    background: none;
+    color: #fff;
+    width: 44px;
+    padding: 20px 60px;
+    
+}
+
+#menuButton::before {
+    content: "☰";
+}
+
+#menuButton.open::before {
+    content: "x";
+}
+
+nav {
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.links {
+    display: none;
+}
+
+ul.open.links {
+    display: block;
+}
+
+nav .active {
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
