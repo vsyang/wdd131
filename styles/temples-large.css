@@ -1,0 +1,35 @@
+@media screen and (min-width: 600px) {
+    body {
+        overflow: visible;
+    }
+
+    header {
+        display: flex;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    .links, .links.open {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        order: 2;
+    }
+
+    nav a:hover {
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        width: 100%;
+    }
+}
