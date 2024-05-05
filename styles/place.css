@@ -8,3 +8,7 @@
     --header: Poppins, sans-serif;
     --red: rgb(206, 22, 22);
 }
+
+#emoji {
+    display: none;
+}
