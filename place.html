@@ -8,6 +8,9 @@
     <meta name="author" content="Vanessa Yang">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap" rel="stylesheet">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
@@ -23,11 +26,33 @@
         
         <section class="data">
             <h2>Data</h2>
+            <p>Area: 155,813 square miles</p>
+            <p>Population: 39,128,162</p>
+            <p>Capital: Sacramento </p>
+            <p>Languages: English </p>
+            <p>Currency: US Dollars </p>
+            <p>Time Zone: PDT or UTC-7 </p>
+            <p>Calling Code: +1 </p>
+            <p>Internet TLD: .us </p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <div id="emoji">🌤️</div>
+            <div id="svg">
+                <img src="images/weather-icon.svg" alt="Weather icon for mobile view">
+            </div>
+            <d1>
+                <p>Temperature: 5°C</p>
+                <p>Conditions: Partly Cloudy</p>
+                <p>Wind: 10 km/h</p>
+                <p id="windchill"></p>
+            </d1>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> 🌸 Vanessa Yang 🌸 Colorado</p>
+        <p>&copy; <span id="currentYear"></span> 🐻 Vanessa Yang 🐻 Colorado</p>
         <p id="lastModified"></p>
     </footer>
 
