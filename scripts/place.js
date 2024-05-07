@@ -12,15 +12,14 @@ const calculateWindChill = (temp, wind) => {
 
         const windChill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(wind, 0.16)) + (0.4275 * temp * Math.pow(wind, 0.16));
         
-        return windChill.toFixed(1);
+        return `${windChill.toFixed(1)}°F`;
     } else {
         return "N/A";
     }
 };
 
 const windChill = calculateWindChill(temp, wind);
-console.log(windChill);
 
-temperature.innerHTML = `<strong>Temperature: </strong> ${temp}°F`;
+temperature.innerHTML = `<strong>Temperature: </strong> ${temp}`;
 windSpeed.innerHTML = `<strong>Wind: </strong> ${wind} mph`;
 windchill.innerHTML = `<strong>Wind Chill: </strong> ${windChill}`;

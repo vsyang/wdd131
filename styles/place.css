@@ -6,8 +6,9 @@
 
 :root {
     --header: Poppins, sans-serif;
-    --red: rgb(206, 22, 22);
+    --red: rgb(179, 0, 0);
     --body: Roboto, sans-serif;
+    --header-back: green;
 }
 
 body {
@@ -39,13 +40,19 @@ p {
     padding: 5px;
 }
 
-strong {
-    font-weight: bold;
-}
-
-#windchill::after {
-    content: "°F";
-}
 #emoji {
     display: none;
+}
+
+#temperature::after {
+    content: "°F";
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--red);
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: var(--header);
 }
