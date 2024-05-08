@@ -21,15 +21,12 @@ function convertGradeToPoints(grade) {
   return points;
 }
 
-// **** another example for solution 2 ***
-// const gpaPoints = grades.map(convertGradeToPoints);
-
-// const gpaPoints = grades.map(convertGradeToPoints);
-// const pointsTotal = gpaPoints.reduce(function (total, item) {
-//   return total + item;
-// });
-// const gpa = pointsTotal / gpaPoints.length;
-
+const gpaPoints = grades.map(convertGradeToPoints);
+const pointsTotal = gpaPoints.reduce(function (total, item) {
+  return total + item;
+});
+const gpa = (pointsTotal / gpaPoints.length).toFixed(1);
+console.log("GPA:", gpa)
 // // *** example 2 ***
 // // *** this is the same thing as above, but with an arrow function ***
 // const pointsTotal = gpaPoints.reduce((total, item) => total + item);
@@ -47,8 +44,10 @@ function convertGradeToPoints(grade) {
 //same thing with an arrow function
 const words = ["watermelon", "peach", "apple", "tomato", "grape"];
 const shortWords = words.filter((word) => word.length < 6);
+console.log(shortWords);
 
 // improved luckyNumber
 const myArray = [12, 34, 21, 54];
 const luckyNumber = 21;
 let luckyIndex = myArray.indexOf(luckyNumber);
+console.log("lucky index:", luckyIndex);
