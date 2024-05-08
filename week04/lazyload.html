@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading</title>
+    <meta name="description" content="Learning how to lazyload">
+    <meta name="author" content="Vanessa Yang">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Week 04</h1>
+    </header>
+
+    <main>
+        <picture>
+            <img src="https://picsum.photos/id/40/400/600" alt="random image from picsum.com" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/82/400/600" alt="random image from picsum.com" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/433/400/600" alt="random image from picsum.com" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/169/400/600" alt="random image from picsum.com" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/219/400/600" alt="random image from picsum.com" loading="lazy" width="400px" height="600px">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/237/400/600" alt="random image from picsum.com" loading="lazy" width="400px" height="600px">
+        </picture>
+    </main>  
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🌸 Vanessa Yang 🌸 Colorado</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="../scripts/getdates.js"></script>
+</body>
+</html>
