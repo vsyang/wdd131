@@ -39,7 +39,7 @@ const aCourse = {
 
 function setCourseInfo(course) {
     const courseName = document.querySelector("#courseName");
-    const coursecode = document.querySelector("courseCode");
+    const coursecode = document.querySelector("#courseCode");
     courseName.textContent = course.name;
     coursecode.textContent = course.code;
 }
