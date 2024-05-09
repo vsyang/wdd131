@@ -5,7 +5,7 @@ const windchill = document.getElementById("windchill");
 let temp = 5;
 let wind = 10;
     temp = (temp * 9/5) + 32;
-    wind = (wind * 0.621371).toFixed(0);
+    wind *= 0.621371;
 const calculateWindChill = (temp, wind) => {
     if((temp <= 50 && wind > 3)) {
         
@@ -20,5 +20,5 @@ const calculateWindChill = (temp, wind) => {
 const windChill = calculateWindChill(temp, wind);
 
 temperature.innerHTML = `<b>Temperature: </b> ${temp}`;
-windSpeed.innerHTML = `<b>Wind: </b> ${wind} mph`;
+windSpeed.innerHTML = `<b>Wind: </b> ${wind.toFixed(0)} mph`;
 windchill.innerHTML = `<b>Wind Chill: </b> ${windChill}`;
