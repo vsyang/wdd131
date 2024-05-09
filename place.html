@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/place-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
@@ -21,33 +21,39 @@
 
     <main>
         <picture>
-            <source media="(min-width: 650px)" srcset="images/hero-large.webp"> 
+            <source media="(min-width: 600px)" srcset="images/hero-large.webp"> 
             <img src="images/hero-small.webp" alt="Mickey and Minnie Mouse posing in a picture" width="350" height="350">
         </picture>
         
         <section class="data">
             <h2>Data</h2>
-            <p>Area: 155,813 square miles</p>
-            <p>Population: 39,128,162</p>
-            <p>Capital: Sacramento </p>
-            <p>Languages: English </p>
-            <p>Currency: US Dollars </p>
-            <p>Time Zone: PDT or UTC-7 </p>
-            <p>Calling Code: +1 </p>
-            <p>Internet TLD: .us </p>
+            <ul>
+                <li> <b>Area:</b> 155,813 sq mi</li>
+                <li> <b>Population:</b> 39,128,162</li>
+                <li> <b>Capital:</b> Sacramento </li>
+                <li> <b>Languages:</b> English </li>
+                <li> <b>Currency:</b> US Dollars </li>
+                <li> <b>Time Zone:</b> PDT or UTC-7 </li>
+                <li> <b>Calling Code:</b> +1 </li>
+                <li> <b>Internet TLD:</b> .us </li>                
+            </ul>
+
         </section>
 
         <section class="weather">
-            <h2>Weather <span id="emoji">🌤️</span></h2>
+            <h2>Weather</h2>
             
             <div id="svg">
                 <img src="images/weather-icon.svg" alt="Weather icon for mobile view" width="100" height="100">
             </div>
             
-            <p id="temperature"></p>
-            <p id="conditions">Conditions: Partly Cloudy</p>
-            <p id="wind"></p>
-            <p id="windchill"></p>
+            <ul>
+                <li id="temperature"></li>
+                <li id="conditions"> <b>Conditions: </b> Partly Cloudy</li>
+                <li id="wind"></li>
+                <li id="windchill"></li>  
+            </ul>
+            
         </section>
     </main>
 

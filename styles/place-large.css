@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
     body {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -10,11 +10,11 @@
     
     main {
         grid-row: 2/3;
+        position: relative;
     }
     picture{
         grid-column: 1/5;
         grid-row: 2/3;
-        position: relative;
     }
 
     picture img {
@@ -28,6 +28,7 @@
     border: none;
     background-color: rgba(255, 255, 255, 0.759);
     padding: 10px;
+    width: 250px;
     }
 
     h2 {
@@ -40,16 +41,17 @@
     }
     .data {
         position: absolute;
-        top: 180px;
+        top: 50px;
         left: 20px;
     }
     
     .data h2 {
         padding-left: 12px;
     }
+
     .weather {
         position: absolute;
-        bottom: 180px;
+        bottom: 50px;
         right: 20px;
     }
 
@@ -58,8 +60,8 @@
         justify-content: space-around;
     }
 
-    #emoji {
-        display: block;
+    .weather h2::after{
+        content: "🌤️";
     }
 
     #svg {

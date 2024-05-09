@@ -19,6 +19,6 @@ const calculateWindChill = (temp, wind) => {
 
 const windChill = calculateWindChill(temp, wind);
 
-temperature.innerHTML = `<strong>Temperature: </strong> ${temp}`;
-windSpeed.innerHTML = `<strong>Wind: </strong> ${wind} mph`;
-windchill.innerHTML = `<strong>Wind Chill: </strong> ${windChill}`;
+temperature.innerHTML = `<b>Temperature: </b> ${temp}`;
+windSpeed.innerHTML = `<b>Wind: </b> ${wind} mph`;
+windchill.innerHTML = `<b>Wind Chill: </b> ${windChill}`;

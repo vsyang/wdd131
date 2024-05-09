@@ -34,14 +34,32 @@ section {
 
 h2{
     padding: 30px;
+    text-align: center;
 }
 
-p {
-    padding: 5px;
+li {
+    list-style: none;
 }
 
-#emoji {
-    display: none;
+
+.data, .weather {
+    margin: 0 auto;
+    text-align: left;
+}
+
+b {
+    font-weight: 700;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    padding-right: 10px;
+    text-align: right;
+}
+
+
+
+#svg {
+    text-align: center;
 }
 
 #temperature::after {
