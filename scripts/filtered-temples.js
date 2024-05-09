@@ -82,4 +82,80 @@ const temples = [
       },
   ];
 
-  
+const displayTemples = (temples) => {
+    reset();
+    temples.forEach((temple) => {
+        let card = document.createElement('section');
+        let templeName = document.createElement('h2');
+        let info = document.createElement('div');
+        let picture = document.createElement('img');
+
+        templeName.textContent = `${temple.templeName}`;
+
+        //info: location, dedication, size
+        info.classList.add('info');
+        info.innerHTML = `
+        <p>Location: ${temple.location}</p>
+        <p>Dedicated: ${temple.dedicated}</p>
+        <p>Size: ${temple.area} sq ft</p>
+        `
+        
+        picture.setAttribute('src', temple.imageUrl);
+        picture.setAttribute('alt', `Image of ${temple.templeName} Temple`);
+        picture.setAttribute('loading', 'lazy');
+        picture.setAttribute('width', '340');
+        picture.setAttribute('height', '250');
+
+        card.appendChild(templeName);
+        card.appendChild(info);
+        card.appendChild(picture);
+
+        cards.appendChild(card);
+    });
+}; 
+
+const reset = () => {
+    cards.innerHTML = '';
+};
+
+const displayAll = () => {
+    reset();
+    displayTemples(temples);
+};
+
+const displayByAge = (age) => {
+    const filteredTemples = temples.filter((temple) => {
+        const year = parseInt(temple.dedicated.split(',')[0]);
+        if (age === 'Old') {
+            return year < 1900;
+        } else if (age === 'New') {
+            return year > 2000;
+        }
+    });
+    reset();
+    displayTemples(filteredTemples);
+};
+
+const displayBySize = (size) => {
+    const filteredTemples = temples.filter((temple) => {
+        if (size === 'Large') {
+            return temple.area > 90000;
+        } else if (size === 'Small') {
+            return temple.area < 10000;
+        }
+    });
+    reset();
+    displayTemples(filteredTemples);
+};
+
+document.getElementById('home').addEventListener('click', displayAll);
+
+document.getElementById('old').addEventListener('click', () => displayByAge('Old'));
+
+document.getElementById('new').addEventListener('click', () => displayByAge('New'));
+
+document.getElementById('large').addEventListener('click', () => displayBySize('Large'));
+
+document.getElementById('small').addEventListener('click', () => displayBySize('Small'));
+
+displayTemples();
