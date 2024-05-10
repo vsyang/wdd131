@@ -1,0 +1,32 @@
+header {
+    align-items: baseline;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2vw;
+    border-radius: 5px;
+}
+
+#cards img {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.7);
+    margin: 20px 10px 10px 10px;
+}
+
+main h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+section {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    background-color: lavender;
+}
+
+section h2 {
+    margin: 10px;
+    font-size: 25px;
+}

@@ -120,6 +120,7 @@ const reset = () => {
 
 const displayAll = () => {
     reset();
+    document.getElementById("header").innerHTML = "Home";
     displayTemples(temples);
 };
 
@@ -127,8 +128,10 @@ const displayByAge = (age) => {
     const filteredTemples = temples.filter((temple) => {
         const year = parseInt(temple.dedicated.split(',')[0]);
         if (age === 'Old') {
+          document.getElementById("header").innerHTML = "Old";
             return year < 1900;
         } else if (age === 'New') {
+          document.getElementById("header").innerHTML = "New";
             return year > 2000;
         }
     });
@@ -139,8 +142,10 @@ const displayByAge = (age) => {
 const displayBySize = (size) => {
     const filteredTemples = temples.filter((temple) => {
         if (size === 'Large') {
+          document.getElementById("header").innerHTML = "Large";
             return temple.area > 90000;
         } else if (size === 'Small') {
+          document.getElementById("header").innerHTML = "Small";
             return temple.area < 10000;
         }
     });
@@ -158,4 +163,4 @@ document.getElementById('large').addEventListener('click', () => displayBySize('
 
 document.getElementById('small').addEventListener('click', () => displayBySize('Small'));
 
-displayTemples();
+displayTemples(temples);
