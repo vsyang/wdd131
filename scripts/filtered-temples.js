@@ -103,7 +103,7 @@ const displayTemples = (temples) => {
         picture.setAttribute('src', temple.imageUrl);
         picture.setAttribute('alt', `Image of ${temple.templeName} Temple`);
         picture.setAttribute('loading', 'lazy');
-        picture.setAttribute('width', '340');
+        picture.setAttribute('width', '400');
         picture.setAttribute('height', '250');
 
         card.appendChild(templeName);
