@@ -7,8 +7,55 @@
     <meta name="author" content="Vanessa Yang">
     <meta name="description" content="Practicing using form">
     <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Week 5 Form</h1>
+        <h2>Designing Web Form</h2>
+    </header>
+
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="wf">
+            <fieldset>
+                <label>
+                    Product Name 
+                    <select name="product" id="product" required>
+                        <option disabled selected value="" >Select a Product</option>
+                    </select>
+                </label>
+
+                <div>Overall Rating</div>
+                <label>
+                    <input type="radio" id="l1" name="star" value="l1" required>&star;
+                </label>
+                <label>
+                    <input type="radio" id="l2" name="star" value="l2" >&star;&star;
+                </label>
+                <label>
+                    <input type="radio" id="l3" name="star" value="l3" >&star;&star;&star;
+                </label>
+                <label>
+                    <input type="radio" id="l4" name="star" value="l4" >&star;&star;&star;&star;
+                </label>
+                <label>
+                    <input type="radio" id="l5" name="star" value="l5" >&star;&star;&star;&star;&star;
+                </label>
+
+                <label>
+                    Date of Installation
+                    <input type="date" id="date-installed" name="date-installed" required>
+                </label>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🌸 Vanessa Yang 🌸 Colorado</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>
