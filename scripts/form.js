@@ -38,7 +38,7 @@ const products = [
 
   function reviewCounter() {
     let reviewCount = localStorage.getItem('reviewCount') || 0;
-    reviewCount = parseInt(reviewCount, 10) + 1;
+    reviewCount++;
     localStorage.setItem('Review Count', reviewCount);
   }
 
