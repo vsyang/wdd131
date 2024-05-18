@@ -31,7 +31,7 @@ const products = [
     products.forEach(product => {
         const option = document.createElement('option');
         option.value = product.id;
-        option.textContent = product.name;
+        option.innerHTML = product.name;
         productName.appendChild(option);
     });
   }
