@@ -36,12 +36,5 @@ const products = [
     });
   }
 
-  function reviewCounter() {
-    let reviewCount = localStorage.getItem('reviewCount') || 0;
-    reviewCount++;
-    localStorage.setItem('Review Count', reviewCount);
-  }
-
   generateProduct();
-  reviewCounter();
 
