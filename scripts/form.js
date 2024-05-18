@@ -42,10 +42,6 @@ const products = [
     localStorage.setItem('Review Count', reviewCount);
   }
 
-  document.querySelector('.wf').addEventListener('submit', function(event) {
-    event.preventDefault();
-    reviewCounter();
-  });
-
   generateProduct();
+  reviewCounter();
 
