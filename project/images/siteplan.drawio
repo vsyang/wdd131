@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" modified="2024-05-19T22:12:06.700Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="uoKAhP7Rdj74y5v-i0_-" version="24.3.1" type="device">
+  <diagram name="Page-1" id="tgNxxkgvDQe6PFJW475n">
+    <mxGraphModel dx="375" dy="400" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qtdXdOWbCcAL2jRGvZvy-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="55.25" y="68" width="254" height="188" as="geometry" />
+        </mxCell>
+        <mxCell id="qtdXdOWbCcAL2jRGvZvy-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="57" y="99" width="250.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qtdXdOWbCcAL2jRGvZvy-6" value="Decadent Arrangements" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="62" y="68" width="241" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qtdXdOWbCcAL2jRGvZvy-7" value="Home" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="57" y="100" width="56" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="qtdXdOWbCcAL2jRGvZvy-8" value="Menu" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="116" y="94" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qtdXdOWbCcAL2jRGvZvy-9" value="Order" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="172" y="94" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qtdXdOWbCcAL2jRGvZvy-10" value="About Us" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="231.75" y="94" width="77.5" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
