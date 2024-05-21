@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary:#171e0f;
+    --secondary: #064789;
+    --shadow1: #fefbf0;
+    --shadow2: #3fb8dd;
+    --accent: #227509;
+    --body-font: "Ubuntu", sans-serif;
+    --header-font: "Dancing Script", cursive;
+    --heading-font: "Poetsen One", sans-serif;
+}
+
+body {
+    display: grid;
+    padding: 4vw;
+    font-family: var(--body-font);
+    color: var(--primary);
+}
+
+header, footer {
+    color: var(--secondary);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-family: var(--header-font);
+    padding: 4vw 4vw 0 4vw;
+    border-bottom: var(--accent) 5px solid;
+    font-weight: bold;
+    font-size: larger;
+}
+
+h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--accent);
+    border-bottom: var(--shadow2) 3px solid;
+    margin-top: 20px;
+    background-color: var(--shadow1);
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    padding-top: 15px;
+}
+
+.color-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 800px;
+    background-color: white;
+}
+
+.cname , .example1, .example2, .example3, .example4, .example5 {
+    border: black solid 3px;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.example1 {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.example2 {
+    background-color: var(--primary);
+    color: white;
+}
+
+.example3 {
+    background-color: var(--shadow1);
+}
+
+.example4 {
+    background-color: var(--shadow2);
+}
+
+.example5 {
+    background-color: var(--accent);
+    color: white;
+}
+
+.header {
+    font-family: var(--header-font);
+}
+
+.heading {
+    font-family: var(--heading-font);
+}
+
+.body {
+    font-family: var(--body-font);
+}
+footer {
+    border-top: var(--accent) 5px solid;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
