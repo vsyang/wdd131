@@ -21,6 +21,12 @@ main h1 {
     color: rgb(247, 247, 234);
 }
 
+.asterisk {
+    color: red;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
 .wf fieldset{
    margin: 1rem 0;
    border: 1px solid #ddd; 
