@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 4vw;
+}
+
+main {
+    margin-top: 20px;
+}
+
+main h1 {
+    text-align: center;
+    background-color: rgb(84, 63, 246);
+    padding: 10px;
+    text-shadow: 3px 3px 3px rgb(21, 17, 17);
+    color: rgb(247, 247, 234);
+}
+
+.wf fieldset{
+   margin: 2rem 0;
+   border: 1px solid #ddd; 
+   border-radius: 6px;
+   padding: .5rem 2%;
+}
+
+.wf label {
+    display: block;
+}
+
+.wf div {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.wf input[type="text"],
+.wf input[type="date"],
+.wf input[type="submit"],
+.wf select {
+    height: 40px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.wf textarea {
+    width: 100%;
+    max-width: 400px;
+}
+
+.wf input[type="text"],
+.wf input[type="date"],
+.wf textarea,
+.wf select {
+    display: block;
+    padding: .75rem;
+    background-color: #eee;
+}
+
+:required {
+    color: green;
+}
+
+.wf input[type="radio"],
+.wf input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(blue, rgb(7, 113, 7));
+    color: white;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    
+}
