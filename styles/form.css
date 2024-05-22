@@ -41,12 +41,13 @@ main h1 {
 .wf input[type="date"],
 .wf input[type="submit"],
 .wf select {
-    height: 40px;
+    height: 42px;
     width: 100%;
     max-width: 400px;
     border: 1px solid black;
     border-radius: 6px;
     font-size: 14px;
+    appearance: none;
 }
 
 .wf textarea {
@@ -82,6 +83,13 @@ main h1 {
     margin-left: 2%;
     margin-right: 2%;
 }
+
+#product {
+    width: 100%;
+    max-width: 400px;
+    font-size: 15px;
+}
+
 
 footer {
     margin-top: 20px;
