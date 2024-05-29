@@ -7,6 +7,7 @@
     <meta name="author" content="Vanessa Yang">
     <meta name="description" content="The home page for Decadent Arrangements">
     <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poetsen+One&family=Ubuntu&display=swap" rel="stylesheet">
@@ -37,27 +38,47 @@
             </picture>
             <h1>Charcuterie Boards</h1>
         </div>
-        
-        <img src="images/xsmall1.webp" alt="sample of a small charcuterie board" loading="lazy">
 
-        <p class="p1">Charcuterie Boards, pronounced as "shar-koo-ter-ee", are elegant and artful arrangemens of meats, cheeses, and accompaniments. Originating from the French tradition, these boards offer a delightful combination of flavors and textures. To compliment the meats and cheeses, the board is often adorned with fresh fruits, nuts, olives, and artisanal bread or crackers.</p>
+        <div class="p1">
+            <h2>What is a charcuterie board?</h2>
+            <p >Charcuterie Boards, pronounced as "shar-koo-ter-ee", are elegant and artful arrangemens of meats, cheeses, and accompaniments. Originating from the French tradition, these boards offer a delightful combination of flavors and textures. To compliment the meats and cheeses, the board is often adorned with fresh fruits, nuts, olives, and artisanal bread or crackers.</p><br>
+        </div>
+        <img src="images/xsmall1.webp" alt="sample of a small charcuterie board" loading="lazy" class="img1">
 
-        <p class="p2">The beauty of a charcuterie board lies in its versatility and the opportunity to cater to different tastes and dietary preferences. The harmonious blend of tastes and textures make them ideal for any social event or special occasion. Impress your family during the holidays, wow your coworkers during the company potluck, bring joy to graduates-- the opportunities to showcase a charcuterie board are endless.</p>
+        <div class="p2">
+            <h2>Where can I present a charcuterie board?</h2>
+            <p>The beauty of a charcuterie board lies in its versatility and the opportunity to cater to different tastes and dietary preferences. The harmonious blend of tastes and textures make them ideal for any social event or special occasion. Impress your family during the holidays, wow your coworkers during the company potluck, bring joy to graduates-- the opportunities to showcase a charcuterie board are endless.</p>
+        </div>
 
-        <img src="images/medium1.webp" alt="sample of a medium sized charcuterie board" loading="lazy">
+        <img src="images/medium1.webp" alt="sample of a medium sized charcuterie board" loading="lazy" class="img2">
 
         <button id="cta" onclick="window.location.href='menu.html'">View the Gallery!</button>
     </main>
 
     <footer>
         <div class="footer-top">
-            <img src="images/logo.webp"
+            <img src="images/logo.webp" alt="the logo for Decadent Arrangements" width="100" height="100">
+            
+            <div class="brand">
+                <h1>Decadent Arrangements</h1>
+                <p>E-mail: <a href="mailto:decadentarrangements2023@gmail.com?subject=May%20I%20Get%20A%20Quote">Decadent Arrangements</a></p>
+            </div>
+        
+            <div class="socials">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/decadent_arrangements" target="_blank"><img src="images/instagram.webp" alt="instagram icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.webp" alt="twitter icon"></a>
+            </div>
         </div>
-        &copy;2024
+        <div class="footer-bottom">
+            <p >&copy; <span id="currentYear"></span> 🌸 Vanessa Yang 🌸 Colorado</p>
+        <p id="lastModified"></p>
+        </div>
+        
     </footer>
     
     <script src="../scripts/hamburger-menu.js"></script>
-
+    <script src="../scripts/getdates.js"></script>
 </body>
 
 </html>
