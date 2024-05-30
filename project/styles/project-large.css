@@ -48,4 +48,13 @@
     }
 
     /* Gallery Page */
+    .gallery-main {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .gallery-main h2, .gallery-main select {
+        flex: 0 0 100%;
+    }
 }

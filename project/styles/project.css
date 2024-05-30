@@ -25,6 +25,7 @@ h1 {
 h2, h3 {
     font-family: var(--heading-font);
     padding-bottom: 5px;
+    color: var(--h2-color);
 }
 
 body {
@@ -36,6 +37,7 @@ header {
     display: flex;
     position: relative;
     padding: 30px 0 30px 2vw;
+    border-bottom: 3px solid var(--nav);
 }
 
 /* Nav bar */
@@ -116,7 +118,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
-    border-top: 2px solid var(--nav);
+    border-top: 3px solid var(--nav);
 }
 
 .brand p {
@@ -178,3 +180,38 @@ main button {
 main p {
     padding-bottom: 5px;
 }
+
+/* Gallery Page */
+.gallery-main h2 {
+    text-align: center;
+    margin-bottom: 15px; 
+}
+
+.gallery-main select, .gallery-main option {
+    display: block;
+    padding: .75rem;
+    height: 42px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
+    font-size: 14px;
+    appearance: none;
+    margin-bottom: 20px;
+}
+
+#examples section {
+    margin: 25px 0;
+    padding: 15px 25px;
+    background-color: var(--shadow);
+    border: solid 1px var(--nav);
+    text-align: center;
+}
+
+.gallery-main button a:link {
+    text-decoration: none;
+    animation-name: magic;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+

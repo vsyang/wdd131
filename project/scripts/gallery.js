@@ -149,4 +149,10 @@ document.querySelector('#sort').addEventListener('change', () => {
     sort(images);
 });
 
+const menuLink = document.getElementById('cta');
+
+menuLink.addEventListener('click', () => {
+    window.location.href = 'https://vsyang.github.io/wdd131/project/order.html'
+});
+
 displayExamples(images);
