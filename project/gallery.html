@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Decadent Arrangements | Gallery</title>
+    <meta name="author" content="Vanessa Yang">
+    <meta name="description" content="The gallery page for Decadent Arrangements with example photos">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poetsen+One&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/gallery.js" defer></script>
 </head>
 <body>
-    this is the gallery
+    <header>
+        <img src="images/logo.webp" alt="logo for Decadent Arrangements" width="100" height="100">
+        <h1>Decadent Arrangements</h1>
+    </header>
+    
+    <nav>
+        <button id="menuButton" title="menu button"></button>
+        <ul class="links">
+            <li><a href="project.html">Home</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main id="gallery-main">
+        <h2>The Decadent Arrangements Gallery</h2>
+        
+        <select id="sort" title="Select">
+            <option value="" disabled selected>Choose here to begin</option>
+            <option value="extra small">Extra Small</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extra large">Extra Large</option>
+            <option value="all">View All</option>
+        </select>
+
+        <div id="examples"></div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <img src="images/logo.webp" alt="the logo for Decadent Arrangements" width="100" height="100">
+            
+            <div class="brand">
+                <h1>Decadent Arrangements</h1>
+                <p>E-mail: <a href="mailto:decadentarrangements2023@gmail.com?subject=May%20I%20Get%20A%20Quote">Decadent Arrangements</a></p>
+            </div>
+        
+            <div class="socials">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/decadent_arrangements" target="_blank"><img src="images/instagram.webp" alt="instagram icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.webp" alt="twitter icon"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p >&copy; <span id="currentYear"></span> 🌸 Vanessa Yang 🌸 Colorado</p>
+        <p id="lastModified"></p>
+        </div>
+        
+    </footer>
+    
+    <script src="../scripts/hamburger-menu.js"></script>
+    <script src="../scripts/getdates.js"></script>
 </body>
+
 </html>
+
+
