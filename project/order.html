@@ -31,10 +31,14 @@
     </nav>
 
     <main class="order-main">
-        <h2>Order Form</h2>
+        <h1>Order Here</h1>
         <form method="get" action="received.html" class="of">
+            <section class="sidebar">
+                <h2>Price List</h2>
+            </section>
             <fieldset>
-                <legend>Your Information </legend>
+                <legend><h2>Your Information</h2> </legend>
+                <span>*Required</span>
                 <label>First Name*
                     <input type="text" name="fname" id="fname" required>
                 </label>
@@ -59,6 +63,11 @@
                 
                 <label>Date Needed By*: 
                     <input type="date" id="date" name="date" required>
+                </label>
+
+                <label>Allergies (Optional)
+                    <textarea id="allergies" name="allergies" rows="4">
+                    </textarea>
                 </label>
                 
             </fieldset>
