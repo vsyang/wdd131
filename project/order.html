@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decadent Arrangements | Gallery</title>
+    <title>Decadent Arrangements | Order </title>
     <meta name="author" content="Vanessa Yang">
-    <meta name="description" content="The gallery page for Decadent Arrangements with example photos">
+    <meta name="description" content="The order form page for Decadent Arrangements asking customer for information to be reachable">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/project-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poetsen+One&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/project.js" defer></script>
+    <script src="scripts/order.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,14 +24,46 @@
         <button id="menuButton" title="menu button"></button>
         <ul class="links">
             <li><a href="project.html">Home</a></li>
-            <li class="active"><a href="gallery.html">Gallery</a></li>
-            <li><a href="order.html">Order</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="order.html">Order</a></li>
             <li><a href="about.html">About Us</a></li>
         </ul>
     </nav>
 
-    <main>
-        
+    <main class="order-main">
+        <h2>Order Form</h2>
+        <form method="get" action="received.html" class="of">
+            <fieldset>
+                <legend>Your Information </legend>
+                <label>First Name*
+                    <input type="text" name="fname" id="fname" required>
+                </label>
+                
+                <label>Last Name*
+                    <input type="text" name="lname" id="lname" required>
+                </label>
+                
+                <label>Cell Phone*
+                    <input type="tel" name="phone" id="phone" required>
+                </label>
+                
+                <label>Email*
+                    <input type="email" name="email" id="email" placeholder="someone@gmail.com" required>
+                </label>
+                
+                <label>Size*
+                    <select name="size" id="size" required>
+                        <option disabled selected value="">Select Charcuterie Board Size &#9662;</option>
+                    </select>
+                </label>
+                
+                <label>Date Needed By*: 
+                    <input type="date" id="date" name="date" required>
+                </label>
+                
+            </fieldset>
+            <input type="submit" value="Send My Request">
+        </form>
     </main>
 
     <footer>

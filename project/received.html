@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decadent Arrangements | Gallery</title>
+    <title>Decadent Arrangements | Received</title>
     <meta name="author" content="Vanessa Yang">
-    <meta name="description" content="The gallery page for Decadent Arrangements with example photos">
+    <meta name="description" content="The page for Decadent Arrangements orders received and confirmed">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/project-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poetsen+One&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/project.js" defer></script>
+    <script src="scripts/received.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,14 +24,21 @@
         <button id="menuButton" title="menu button"></button>
         <ul class="links">
             <li><a href="project.html">Home</a></li>
-            <li class="active"><a href="gallery.html">Gallery</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="order.html">Order</a></li>
             <li><a href="about.html">About Us</a></li>
         </ul>
     </nav>
 
     <main>
-        
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 250px)" srcset="images/hero-small.webp">
+                <img src="images/hero-large.webp" alt="image of a large Charcuterie board" width="1000">
+            </picture>
+            <h1>Thank You! Your Order Has Been Received!</h1>
+            
+        </div>
     </main>
 
     <footer>
