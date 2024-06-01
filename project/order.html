@@ -32,37 +32,72 @@
 
     <main class="order-main">
         <h1>Order Here</h1>
+        <table class="sidebar">
+            <caption>Note: These are starting prices. Please email for a precise quote.</caption>
+
+            <thead>
+                <tr>
+                    <th colspan="2" scope="col">Prices</th>
+                </tr>
+                <tr>
+                    <th scope="col">Size</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Extra Small</td>
+                    <td>$50+</td>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>$100+</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>$150+</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>$200+</td>
+                </tr>
+                <tr>
+                    <td>Extra Large</td>
+                    <td>Must email for quote</td>
+                </tr>
+            </tbody>
+        </table>
         <form method="get" action="received.html" class="of">
-            <section class="sidebar">
-                <h2>Price List</h2>
-            </section>
+            
+            
             <fieldset>
                 <legend><h2>Your Information</h2> </legend>
-                <span>*Required</span>
+                <span class="require">*Required</span>
                 <label>First Name*
-                    <input type="text" name="fname" id="fname" required>
+                    <input type="text" name="fname" id="fname" autocomplete="given-name" required>
                 </label>
                 
                 <label>Last Name*
-                    <input type="text" name="lname" id="lname" required>
+                    <input type="text" name="lname" id="lname" autocomplete="family-name"  required>
                 </label>
                 
                 <label>Cell Phone*
-                    <input type="tel" name="phone" id="phone" required>
+                    <input type="tel" name="phone" id="phone" autocomplete="tel" required>
                 </label>
                 
                 <label>Email*
-                    <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$" placeholder="someone@gmail.com" required>
+                    <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$" placeholder="someone@gmail.com" autocomplete="email" required>
                 </label>
                 
                 <label>Size*
-                    <select name="size" id="size" required>
+                    <select name="size" id="size" autocomplete="off" required>
                         <option disabled selected value="">Select Charcuterie Board Size &#9662;</option>
                     </select>
                 </label>
                 
                 <label>Date Needed By*: 
-                    <input type="date" id="date" name="date" required>
+                    <input type="date" id="date" name="date" autocomplete="off" required>
                 </label>
 
                 <label>Allergies (Optional)
@@ -70,9 +105,10 @@
                     </textarea>
                 </label>
                 
-            </fieldset>
-            <input type="submit" value="Send My Request">
+            </fieldset>   
+            <input type="submit" value="Send My Request"> 
         </form>
+        
     </main>
 
     <footer>
@@ -85,9 +121,9 @@
             </div>
         
             <div class="socials">
-                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="facebook icon" loading="lazy"></a>
-                <a href="https://www.instagram.com/decadent_arrangements" target="_blank"><img src="images/instagram.webp" alt="instagram icon" loading="lazy"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.webp" alt="twitter icon" loading="lazy"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.webp" alt="facebook icon" loading="lazy" width="80" height="80"></a>
+                <a href="https://www.instagram.com/decadent_arrangements" target="_blank"><img src="images/instagram.webp" alt="instagram icon" loading="lazy" width="80" height="80"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.webp" alt="twitter icon" loading="lazy" width="80" height="80"></a>
             </div>
         </div>
         <div class="footer-bottom">
